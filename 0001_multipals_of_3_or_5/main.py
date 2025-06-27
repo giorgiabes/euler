@@ -7,9 +7,9 @@
 
 
 # solution 1
-# def sum_multiples(m1, m2, length):
-#     sum = 0
-#     for multiple in range(length):
-#         if multiple % m1 == 0 or multiple % m2 == 0:
-#             sum += multiple
-#     return sum
+def sum_multiples(n):
+    sum = 0
+    for multiple in range(n):
+        if multiple % 3 == 0 or multiple % 5 == 0:
+            sum += multiple
+    return sum
