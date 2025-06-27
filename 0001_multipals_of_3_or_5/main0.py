@@ -6,14 +6,10 @@
 # multiples of 3 or 5 below 1000.
 
 
-# solution 2
-
-TARGET = 1_000_000_000
-
-
-def sum_divisible_by(n):
-    p = TARGET // n
-    return n * (p * (p + 1)) // 2
-
-
-print(sum_divisible_by(3) + sum_divisible_by(5) - sum_divisible_by(15))
+# solution 1
+def sum_multiples(n):
+    sum = 0
+    for multiple in range(n):
+        if multiple % 3 == 0 or multiple % 5 == 0:
+            sum += multiple
+    return sum
